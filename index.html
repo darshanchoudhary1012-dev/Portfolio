@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Choudhary - Professional Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Darshan<span>.dev</span></a>
+
+            <div class="top-social-icons">
+                <a href="mailto:darshanchoudhary1012@gmail.com" title="Email Me"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/darshanchoudhary1012-dev" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/darshan-choudhary1012" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/918827758595" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+918827758595" title="Call Me"><i class="fas fa-phone-alt"></i></a>
+
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Welcome to my portfolio</span>
+            <h1>Hi, I'm <span>Darshan Choudhary</span></h1>
+            <p>
+                An IT student & aspiring full-stack web developer focused on building clean, functional, and user-friendly web applications.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                
+                <!-- View Resume (Fixed Path) -->
+                <a href="Darshan Resume.pdf" target="_blank" rel="noopener" class="btn btn-resume">
+                    <i class="fas fa-eye"></i> View Resume
+                </a>
+
+                <!-- Download Resume (Fixed Path) -->
+                <a href="Darshan Resume.pdf" download="Darhan Resume.pdf" class="btn btn-download">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <p>Get to know who I am and what drives me</p>
+        </div>
+        <div class="about-card">
+            <p>
+                I am a passionate Information Technology (IT) student pursuing B.Tech from RGPV. I have a strong interest in Full-Stack Web Development and modern technologies.
+                <br><br>
+                I enjoy building responsive, user-friendly, and scalable web applications using HTML, CSS, JavaScript, Node.js, Express.js, and databases like MySQL and MongoDB.
+                <br><br>
+                My goal is to become a skilled Full-Stack Developer and contribute to innovative technology solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+            <p>Technologies and tools I work with</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item"><h3>HTML5 / CSS3</h3></div>
+            <div class="skill-item"><h3>JavaScript</h3></div>
+            <div class="skill-item"><h3>Node.js</h3></div>
+            <div class="skill-item"><h3>Express.js</h3></div>
+            <div class="skill-item"><h3>MySQL & MongoDB</h3></div>
+            <div class="skill-item"><h3>Git & GitHub</h3></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Some of the work I've built recently</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>E-Commerce Web Application</h3>
+                    <p>A fully functional e-commerce project built using custom logic, HTML, CSS, and JavaScript, hosted live on GitHub Pages.</p>
+                </div>
+                <div class="project-footer">
+                    <a href="https://darshanchoudhary1012-dev.github.io/E-Commerce-/" target="_blank" class="project-link">View Live →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Online Quiz Exam With Camera Protection</h3>
+                    <p>An interactive quiz application featuring camera protection monitoring designed for secure online testing.</p>
+                </div>
+                <div class="project-footer">
+                    <a href="https://darshanchoudhary1012-dev.github.io/Quiz/" target="_blank" class="project-link">View Live →</a>         
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>College Bus Route Finder</h3>
+                    <p>A location and route tracking application designed to help college students easily navigate college bus paths.</p>
+                </div>
+                <div class="project-footer">
+                    <a href="https://darshanchoudhary1012-dev.github.io/College-Bus-Website/" target="_blank" class="project-link">View Live →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Let's collaborate or connect for opportunities</p>
+        </div>
+        <div class="contact-container">
+            <p>I am always open to discussing new projects, technical ideas, or web development opportunities.</p>
+            <a href="mailto:darshanchoudhary1012@gmail.com" class="btn btn-primary">Send an Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-text">&copy; 2026 Darshan Choudhary. All rights reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript for 100% Working Theme Toggle & Dynamic Year -->
+    <script>
+        document.getElementById("footer-text").innerHTML = `&copy; ${new Date().getFullYear()} Darshan Choudhary. All rights reserved.`;
+
+        function toggleTheme() {
+            const htmlElement = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            let currentTheme = htmlElement.getAttribute('data-theme');
+
+            if (currentTheme === 'light') {
+                htmlElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'dark');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            } else {
+                htmlElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            const themeIcon = document.getElementById('theme-icon');
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
